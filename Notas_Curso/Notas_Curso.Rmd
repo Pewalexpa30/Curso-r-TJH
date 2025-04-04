@@ -1,0 +1,40 @@
+---
+title: "R Notebook"
+output:
+  pdf_document: default
+  html_notebook: default
+  html_document:
+    df_print: paged
+---
+
+
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+
+**TOMA DE NOTAS DEL CURSO** 
+
+4 de abril de 2025
+
+Uno de los comandos más importantes que se tienen es el de **ALT + Enter** para lograr que una parte del código que se está haciendo en el Script se ejecute en la consola. Esta es una parte inicial pero de igual manera es bueno tenerla en cuenta.
+
+RMD significa MarkDown de R basicamente.
+
+El Latex que ya instalamos es lo que permite que los Markdowns por ejemplo puedan salir en PDF, de lo contrario normalmente dan error.
+
+Desde la parte Help>Markdown Quick Reference explica qué se puede hacer, cuales son los shortcuts en los Mds para saber qué se puede hacer. Temas de Sintaxis, entre otras cosas.
+
+Escribir ? seguido de algo EJ: "?sum" en consola, es la forma de encontrar ayuda para las funciones.
+
+Help.Start() es la manera de conseguir información general de R, no de un paquete o función.
+
+
+
+
