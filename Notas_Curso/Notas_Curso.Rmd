@@ -35,6 +35,46 @@ Escribir ? seguido de algo EJ: "?sum" en consola, es la forma de encontrar ayuda
 
 Help.Start() es la manera de conseguir información general de R, no de un paquete o función.
 
+8 de Abril de 2025
+
+Iniciamos con la clase 18, donde se habla de cómo instalar y cargar librerías en R.
+
+Se explica que or ejemplo con la función para instalar paquetes de
+
+Install.packages("Nombre_paquete", dep =TRUE)
+
+Se da la instrucción de instalar no sólo el paquete sino todas las dependencias que tenga, por ejemplo el tidyverse que se usará mucho en el curso, tiene 8 paquetes dependientes. Lo importante es saber que dep es eso aquí.
+
+Posteriormente cuando se quiere cargar la librería se unsa
+
+library(Nombre_Paquete)    - En este caso sin comillas, de lo contrario no funciona
+
+Si yo intento usar funciones que sólo existen en el paquete antes de usar library, no funciona. Por esto es fundamental.
+
+Los paquetes también se pueden cargar dandole a la palomita de la derecha, y lo mismo para quitarlo
+
+**Sólo hay que preocuparse cuando los rojos indiquen errores, los warnings no son tan complicados, R sólo indica que si se pudo hacer pero no del todo**
+
+Las librerías bienen en targz cuando no se bajan del CRAN, es una forma de instalar paquetes de amigos, y por el estilo.
+
+¿Cómo Utilizar R como una calculadora? (Clase 19)
+
+Se pueden solicitar en la consola múltiples operaciones si van separadas con ;   esto hace que la respuesta se proporcione en vector
+
+1+1;2+2;3+3
+[1] 2
+[1] 4
+[1] 6
+
+Da eso por ejemplo
+
+%/% cociente entero (esto es básicamente aproximar hacia abajo)
+%% Resto de división entera (y eso es lo que sobra de una división entera)
+
+la separación de decimales son siempre con . en R - Jamás con ,
+
+
+
 
 
 
