@@ -74,6 +74,42 @@ Da eso por ejemplo
 la separación de decimales son siempre con . en R - Jamás con ,
 
 
+pi se puede escribir como tal, y R lo entiende como el número
+
+sucede parejo con inf para infinito
+
+NA (not available)
+NaN (not a number) - indeterminación
+
+cuand se utiliza la notación científica, la coma se mueve las posiciones que indica el e
+
+
+El coeficiente biomial es la función Choose(#,#), combinatoria
+se ordenan n elementos tomados de m
+
+
+
+se usa como choose(2;3)
+
+el factorial (!) se usa con factorial(#)
+
+
+Las funciones trigonomeétricas trabajan en radianes, y las trigonométricas a la .1 son con a, asin acos y atan. Estos arcos sirven para hacer la inversa, es decir obtener el angulo en radianes de un valor.
+
+para transformar los grados, hay que multiplicar por 180 y dividiendo por pi, es decir que pi es 180 basicamente
+
+Recordando,
+
+El coseno es el valor en x del triangulo que se genera con el radio (de valor 1) que hace el ángulo, mientras que el seno es el valor en el eje y
+
+por eso para el ángulo 0, seno es 0 pero el coseno es máximo, es decir 1
+
+la tangente es la relación entre ambas
+
+
+
+
+
 
 
 
