@@ -107,10 +107,138 @@ por eso para el ángulo 0, seno es 0 pero el coseno es máximo, es decir 1
 la tangente es la relación entre ambas
 
 
+La diferencia que no es tan evidente entre trunc y el floor es la manera en la que trata os negativos, el trunc vuelve -4,3 = -4, mientras que el floor lo lleva al más negativo, es decir que sería -5, si fueran positivos si sería igual el 4,3 sería 4 en ambos casos.
+
+Truncar y redondear no es lo mismo entonces. Aunque es claro que parecen similares.
+
+
+x<- 3+4
+
+3+4 ->y
+3+4 = y #Esto no anda
+
+La flecha es a veces mejor porque se puede usar en los dos sentidos
+En el segundo caso con el = no funcionaría
+
+IMPORTANTE DE VARIABLES
+
+R es sensible a las variables con mayúscula, hola y HOLA son leídas como variables diferentes
+
+nombre_funcion = function(variable){función}
+ej
+
+cuadrado=function(x){x^2}
+
+
+15 de abril de 2025
+
+
+R es sensible al punt en el que se manda el comando, es decir que si el código está en varias líneas, y es tipo una función "Función", es mejor ponerle el cursor en function y no en lo escrito.
+
+
+c<-function(x,y){
+  x*2+y*4
+}
+  
+  
+la separación de varias instrucciones se hace con ;
+ejemplo
+
+c<-function(x,y){
+  numero<-x*2+y*4;
+  numero<-x*2+y*4+numero;
+  numero<-x*2+y*4+numero;
+  numero<-x*2+y*4+numero;
+  numero
+}
+c(2,2)
+
+Aquí vienen otras 2 funciones importantes, ls() y rm()
+
+ls() #muestra las variables que estén creadas
+
+y con rm() se eliminan variables
+
+rm(c)
+
+rm(list=ls()) #Esto se encarga de eliminar todo, puesto que el list lo que hace es representar digamos un vector con todo lo que pueda existir en esa variable.
+
+También se puede utilizar la escobilla del Environment para borrar las variables..
+
+rrr<-function(x){
+  #Sumatorioa
+  print("Hola")
+}
+
+rrr(10)  #Esto devuelve un texto según la función.
+
+
+IMPRESIÓN DE TEXTOS EN FUNCIONES
+
+Dentro de una function se pueden incluír prints que tienen variaciones adentro. Se resalta la siguiente
+
+print(paste(sprintf("%i - %i =",a,b),a-b))
+#lo anterior al llamar a una función con variables a y b
+#la función paste lo que hace basicamente es concatenar, la otra función si lo hace es or el tema del formato
 
 
 
+APARTADO DE NÚMEROS COMPLEJOS
+
+Sqrt(-5)
+#Esto da un error
+
+por lo que toca utilizar 
+sqrt(as.complex(-5))
+
+complex(real=i, imaginary=sqrt(2)) -> z1
+#Por ejemplo
 
 
+#Recordatorio, el "Módulo" de un vector o número complejo es un simil del valor absoluto, mide el tamaño de su asociado
+
+En el casod de los número complejos es la raíz de la suma de los cuadrados de la parte real y la imaginaria.
+
+
+#TAREA
+
+Si a las 0h del 1ero de enero de 2018 se empiezan a contar los segundos, cuánto nos demoraríamos en llegar a 250 millones de segundos
+
+Empezamos por saber cuando es año bisiesto, fue en el 2020,
+
+
+segundos<-250000000
+segundosañoregular<-60*60*24*365
+segundosañobisiesto<-60*60*24*366
+
+#Años mas o menos
+
+segundos/segundosañoregular
+
+
+#Los restantes son los segundos que faltan en el año, se alcanzó a tomar 2 años bisiestos en el camino (2020 y 2024)
+
+años<-segundos%/%((5*segundosañoregular+2*segundosañobisiesto)/7)
+
+restantes<-(segundos%%(5*segundosañoregular+2*segundosañobisiesto))
+
+
+segundosdias<-60*60*24
+diasenteros<-restantes%/%segundosdias
+restantes<-restantes%%segundosdias
+
+segundoshoras<-60*60
+horasenteras<-restantes%/%segundoshoras
+restantes<-restantes%%segundoshoras
+
+segundosminutos<-60
+minutosenteros<-restantes%/%segundosminutos
+
+print(años)
+print(diasenteros)
+print(horasenteras)
+print(minutosenteros)
+
+segundosrestantes
 
 
